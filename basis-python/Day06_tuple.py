@@ -22,3 +22,20 @@ a_tuples = (5)
 print(type(a_tuples))
 a_tuples = (5,)
 print(type(a_tuples))
+
+# 切片
+s = "hello world"
+# 直接写下标访问元素内容
+print(s[4])
+
+# 包头不包尾 左闭右开
+print(s[0:4])
+
+# 从起始值开始一直到末尾
+print(s[1:])
+
+# 从下标为0的索引元素开始一直到第二个参数为止 左闭右开
+print(s[:4])
+
+# 从下标为0 字符长度-1 结束 每次增长2 左闭右开
+print(s[0:len(s) - 1:2])
